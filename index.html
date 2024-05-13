@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Калькулятор</h2>
+        <form id="calculator-form">
+            <label for="operation">Выберите операцию:</label>
+            <select id="operation">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="^">^</option>
+            </select><br>
+            <label for="num1">Введите первое число:</label>
+            <input type="number" id="num1"><br>
+            <label for="num2">Введите второе число:</label>
+            <input type="number" id="num2"><br>
+            <button type="button" onclick="calculate()">Посчитать</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
